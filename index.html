@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌤 Smart Weather App</h1>
+
+        <!-- Search Section -->
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="city-input" 
+                placeholder="Enter city name"
+            >
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- Error Message -->
+        <p id="error-message"></p>
+
+        <!-- Weather Display Section -->
+        <div id="weather-box">
+
+            <h2 id="city-name">City Name</h2>
+
+            <p id="temperature">Temperature: --°C</p>
+
+            <p id="feels-like">Feels Like: --°C</p>
+
+            <p id="condition">Condition: --</p>
+
+            <p id="humidity">Humidity: --%</p>
+
+            <p id="wind-speed">Wind Speed: -- km/h</p>
+
+        </div>
+
+        <!-- Suggestion Section -->
+        <div id="suggestion-box">
+            <p id="suggestion-text">
+                Weather suggestion will appear here.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
