@@ -1,0 +1,102 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Outer Background (Dark Blue Gradient) */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* Card (Light Color for Contrast) */
+.container {
+  width: 380px;
+  padding: 30px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: #333;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #2c5364;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#city-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+#city-input:focus {
+  border-color: #2c5364;
+}
+
+/* Button */
+#search-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#search-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Weather Box */
+#weather-box {
+  margin-top: 15px;
+}
+
+#city-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #203a43;
+}
+
+#weather-box p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* Suggestion Box */
+#suggestion-box {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #f0f8ff;
+  font-size: 14px;
+}
+
+/* Error Message */
+#error-message {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
